@@ -139,3 +139,13 @@ input {
   background: rgba(79, 70, 229, 0.1);
   transform: scale(1.1);
 }
+.clear-btn {
+  position: absolute;
+  right: 35px;
+  top: 105px; /* Ajusta según la posición de tu input */
+  background: none;
+  border: none;
+  color: #9ca3af;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
