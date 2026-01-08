@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Descargador Multimedia</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="app">
+    <h1>Descargar video / audio</h1>
+
+    <input id="video-url" type="text" placeholder="Pega aquí el enlace del video..." />
+
+      <div id="progress-box" class="progress hidden">
+    <div class="progress-bar">
+      <div id="progress-bar"></div>
+    </div>
+    <span id="progress-percent">0%</span>
+  </div>
+
+    <div id="loader" class="loader hidden">Analizando enlace...</div>
+
+    <div class="format-selector">
+      <button id="btn-mp4" class="format-btn active">MP4</button>
+      <button id="btn-mp3" class="format-btn">MP3</button>
+    </div>
+
+    <!-- MP4 -->
+    <div id="mp4-options" class="download-options">
+      <div class="option">
+        <span>MP4 · 1080p</span>
+        <button data-format="mp4" data-quality="1080p">Descargar</button>
+      </div>
+      <div class="option">
+        <span>MP4 · 720p</span>
+        <button data-format="mp4" data-quality="720p">Descargar</button>
+      </div>
+      <div class="option">
+        <span>MP4 · 480p</span>
+        <button data-format="mp4" data-quality="480p">Descargar</button>
+      </div>
+    </div>
+
+    <!-- MP3 -->
+    <div id="mp3-options" class="download-options hidden">
+      <div class="option">
+        <span>MP3 · 320 kbps</span>
+        <button data-format="mp3" data-quality="320">Descargar</button>
+      </div>
+      <div class="option">
+        <span>MP3 · 192 kbps</span>
+        <button data-format="mp3" data-quality="192">Descargar</button>
+      </div>
+      <div class="option">
+        <span>MP3 · 128 kbps</span>
+        <button data-format="mp3" data-quality="128">Descargar</button>
+      </div>
+    </div>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>
