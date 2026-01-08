@@ -114,3 +114,28 @@ input {
   font-size: 0.85rem;
 }
 
+.supported-platforms {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.platform-tag {
+  font-size: 0.75rem;
+  padding: 4px 10px;
+  background: #22222c;
+  border-radius: 20px;
+  color: #6b7280;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+}
+
+/* Clase que se activará con JavaScript */
+.platform-tag.matched {
+  color: #4f46e5;
+  border-color: #4f46e5;
+  background: rgba(79, 70, 229, 0.1);
+  transform: scale(1.1);
+}
